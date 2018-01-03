@@ -13,7 +13,7 @@ if ( defined( 'WP_OFFLINE_MOD_ENABLED' ) && WP_OFFLINE_MOD_ENABLED ) {
 	 * which is already a very good point
 	 * for our plugin
 	 */
-	if ( defined( 'WP_HTTP_BLOCK_EXTERNAL' ) ) {
+	if ( ! defined( 'WP_HTTP_BLOCK_EXTERNAL' ) ) {
 		define( 'WP_HTTP_BLOCK_EXTERNAL', true );
 	}
 
