@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Offline WP
  * Description: Put your WP install into a "standalone" local install and get rid of all the checking for update e.g. on WordPress.org
- * Version:     0.73
+ * Version:     0.74
  * Author:      Julien Maury
  * Author URI:  https://tweetpress.fr
  * Text Domain: owp

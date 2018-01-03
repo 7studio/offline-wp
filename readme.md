@@ -44,6 +44,10 @@ So if you grab wifi codes or something else you can disable offline mod without 
 
 ### Jan 2018
 
+* 0.74
+* fix use of constant to enable mod not working
+* use wrapper instead
+
 * 0.73
 * initial
 * First plugin of the Year \0/
