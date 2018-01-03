@@ -1,0 +1,16 @@
+{
+  "name": "tweetpressfr/offline-wp",
+  "description": "Put your WP install into a \"standalone\" local install and get rid of all the checking for update e.g. on WordPress.org",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "TweetPressFr",
+      "email": "contact@tweetpress.fr"
+    }
+  ],
+  "type": "wordpress-plugin",
+  "require": {
+    "composer/installers": "~1.0",
+    "php": ">=5.4.0"
+  }
+}
