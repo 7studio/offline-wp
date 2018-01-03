@@ -9,14 +9,6 @@ function _owp_process_save() { // cause I really like function named "%process%"
 	$opt = (int) get_option( 'owp_toggle_offline_mod' );
 
 	/**
-	 * Let's define some constant
-	 * we will use it to trigger / disable the rest of the code
-	 */
-	if ( _owp_is_offline_mod_enabled() && ! defined( 'WP_OFFLINE_MOD_ENABLED' ) ) {
-		define( 'WP_OFFLINE_MOD_ENABLED', true );
-	}
-
-	/**
 	 * You could say, what the hell !
 	 * offline mod && nonce ?
 	 * Yes Sir. Don't ask don't tell !

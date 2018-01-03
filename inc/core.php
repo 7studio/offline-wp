@@ -7,7 +7,7 @@ if ( ! defined( 'DB_USER' ) ) {
  * Let's define some constant
  * we will use it to trigger / disable the rest of the code
  */
-if ( defined( 'WP_OFFLINE_MOD_ENABLED' ) && WP_OFFLINE_MOD_ENABLED ) {
+if ( _owp_is_offline_mod_enabled() ) {
 	/**
 	 * Disable all external requests
 	 * which is already a very good point
