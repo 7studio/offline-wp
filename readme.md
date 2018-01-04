@@ -21,10 +21,6 @@ So if you grab wifi codes or something else you can disable offline mod without 
 * offline-wp/hide_admin_bar : determine who can/cannot access to the admin bar toggle
 * offline-wp/admin_bar_styles : in case you do not enjoy my colors. Important cause otherwise you could spend hours with them ^^
 
-## Constants
-
-* WP_OFFLINE_MOD_ENABLED, set it to false or true
-
 ## How to install
 
 1. Install and activate this plugin
