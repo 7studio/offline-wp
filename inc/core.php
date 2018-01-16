@@ -57,8 +57,26 @@ if ( _owp_is_offline_mod_enabled() ) {
 	 * so it deserves its own function
 	 */
 	add_action( 'init', function () {
-		add_filter( 'get_avatar', '__return_empty_string' );
+		add_filter( 'get_avatar_data', '_owp_return_blank_avatar', PHP_INT_MAX, 2 );
 	} );
+
+	/**
+	 * Retrieves a blank avatar URL (1x1 transparent GIF) if the avatar's URL and
+	 * the Site's address (URL) are differents.
+	 *
+	 * @author Xavier Zalawa
+	 * @param array  $args        Arguments passed to get_avatar_data(), after processing.
+	 * @param mixed  $id_or_email The Gravatar to retrieve. Accepts a user_id, gravatar md5 hash,
+	 *                            user email, WP_User object, WP_Post object, or WP_Comment object.
+ 	 * @return array
+	 */
+	function _owp_return_blank_avatar( $args, $id_or_email ) {
+		if ( $args['url'] && ! is_wp_error( $args['url'] ) && mb_strpos( $args['url'], get_bloginfo( 'url' ) ) === false ) {
+			$args['url'] = OWP_URL . '/assets/img/null.gif';
+		}
+
+		return $args;
+	}
 
 	/**
 	 * This one too !

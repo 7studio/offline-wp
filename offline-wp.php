@@ -13,6 +13,7 @@ if ( ! defined( 'DB_USER' ) ) {
 }
 
 define( 'OWP_PATH', plugin_dir_path( __FILE__ ) );
+define( 'OWP_URL', plugins_url( '', __FILE__ ) );
 
 /**
  * Let's add a simple option
